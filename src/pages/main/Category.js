@@ -21,9 +21,9 @@ const CategoryContainer = styled.div`
   width: ${({ theme }) => theme.width.s20Ultra};
 
   ul {
-    height: 48px;
     display: flex;
     align-items: center;
+    height: 48px;
     padding-left: 16px;
     font-size: 14px;
     overflow-x: scroll;

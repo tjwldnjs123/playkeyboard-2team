@@ -1,25 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
-function Category() {
-  const [category, setCategory] = useState([]);
-
-  useEffect(() => {
-    fetch("https://api.plkey.app/theme/category")
-      .then((res) => res.json())
-      .then((data) => setCategory(data.data));
-  }, []);
-
+const Category = ({ category, handleCategory }) => {
   return (
     <CategoryContainer>
       <ul>
         {category?.map((categories) => {
-          return <li>{categories}</li>;
+          return (
+            <li onClick={() => handleCategory(categories)}>{categories}</li>
+          );
         })}
       </ul>
     </CategoryContainer>
   );
-}
+};
 
 export default Category;
 
@@ -42,6 +36,6 @@ const CategoryContainer = styled.div`
     }
   }
   ul::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera*/
+    display: none;
   }
 `;

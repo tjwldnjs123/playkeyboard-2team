@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import Card from "./Card";
 import Category from "./Category";
+import Dock from "./Dock";
 import styled from "styled-components";
 
 const Main = (props) => {
@@ -32,6 +33,7 @@ const Main = (props) => {
         <Category handleCategory={handleCategory} category={category} />
       )}
       {cards && <Card cards={cards} />}
+      <Dock />
     </MainContainer>
   );
 };

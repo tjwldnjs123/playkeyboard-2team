@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react';
-import DetailTop from './components/DetailTop';
-import Expression from '../../components/Expression';
-import Purchase from '../../components/Purchase';
-import Inquiry from '../../components/Inquiry';
-import LiveTheme from './components/LiveTheme';
-import { useParams } from 'react-router-dom';
+import { useEffect, useState } from "react";
+import DetailTop from "./components/DetailTop";
+import Expression from "./components/bottomSection/Expression";
+import PurchaseBtn from "./components/bottomSection/PurchaseBtn";
+import InquiryBtn from "./components/bottomSection/InquiryBtn";
+import LiveTheme from "./components/LiveTheme";
+import { useParams } from "react-router-dom";
 
 const Detail = (props) => {
   const [data, setData] = useState();
@@ -22,8 +22,8 @@ const Detail = (props) => {
           <DetailTop />
           {data.figure && <LiveTheme figure={data.figure} />}
           <Expression />
-          <Inquiry />
-          <Purchase />
+          <InquiryBtn />
+          <PurchaseBtn />
         </div>
       )}
     </>

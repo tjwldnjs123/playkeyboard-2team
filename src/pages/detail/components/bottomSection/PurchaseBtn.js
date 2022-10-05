@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Purchase = () => {
+const PurchaseBtn = () => {
   return (
     <PurchaseContainer>
       <PurchaseButton>
@@ -13,7 +13,7 @@ const Purchase = () => {
     </PurchaseContainer>
   );
 };
-export default Purchase;
+export default PurchaseBtn;
 
 const PurchaseContainer = styled.div`
   height: 64px;

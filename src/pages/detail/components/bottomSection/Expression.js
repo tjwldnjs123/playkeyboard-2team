@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import Counter from './Counter';
+import React, { useState } from "react";
+import styled from "styled-components";
+import Counter from "./Counter";
 
 const Expression = () => {
   const [click, setClick] = useState(false);
@@ -8,23 +8,23 @@ const Expression = () => {
   const ExpressionElem = [
     {
       id: 1,
-      text: '맘에들어요',
-      image: '/images/smile.png',
+      text: "맘에들어요",
+      image: "/images/smile.png",
     },
     {
       id: 2,
-      text: '심쿵했어요',
-      image: '/images/love.png',
+      text: "심쿵했어요",
+      image: "/images/love.png",
     },
     {
       id: 3,
-      text: '응원해요',
-      image: '/images/wink.png',
+      text: "응원해요",
+      image: "/images/wink.png",
     },
     {
       id: 4,
-      text: '갖고싶어요',
-      image: '/images/laugh.png',
+      text: "갖고싶어요",
+      image: "/images/laugh.png",
     },
   ];
 
@@ -37,7 +37,7 @@ const Expression = () => {
             key={result.id}
           >
             <div>
-              <img alt='표정' src={result.image} />
+              <img alt="표정" src={result.image} />
               <Counter text={result.text} />
             </div>
           </ExpressionWrapper>

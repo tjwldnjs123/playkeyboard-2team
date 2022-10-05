@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
-const Inquiry = () => {
+const InquiryBtn = () => {
   return (
     <PurchaseContainer>
       <InquiryButton>상품 문의</InquiryButton>
     </PurchaseContainer>
   );
 };
-export default Inquiry;
+export default InquiryBtn;
 
 const PurchaseContainer = styled.div`
   height: 4rem;

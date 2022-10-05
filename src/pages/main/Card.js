@@ -1,19 +1,28 @@
 import React from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import styled from "styled-components";
 import HashTag from "./HashTag";
 
 const Card = ({ cards }) => {
+  const navigate = useNavigate();
+
   return (
     <CardBox>
       <CardContainer>
         {cards.map((card) => (
-          <div className="card-list">
+          <div
+            key={card.themeId}
+            className="card-list"
+            onClick={() => {
+              navigate(`/detail/:${card.themeId}`);
+            }}
+          >
             <img className="card-img" src={card.imageUrl} alt="card-list-img" />
             <div className="card-content">
               <p className="card-name">{card.name}</p>
               <div className="card-hashtag">
-                {card.hashtag.map((tag) => {
-                  return <HashTag tag={tag} />;
+                {card.hashtag.map((tag, idx) => {
+                  return <HashTag key={idx} tag={tag} />;
                 })}
               </div>
               <div className="card-data-container">
@@ -41,14 +50,12 @@ const CardBox = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  /* margin: 0 auto; */
 `;
 
 const CardContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  /* border: 1px solid red; */
   height: 870px;
   overflow-y: scroll;
   -ms-overflow-style: none;
@@ -57,7 +64,6 @@ const CardContainer = styled.div`
   .card-list {
     width: 164px;
     height: 199px;
-    /* margin-left: 27px; */
     margin-bottom: 10px;
 
     &:nth-child(2n-1) {

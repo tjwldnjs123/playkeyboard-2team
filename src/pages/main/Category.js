@@ -2,14 +2,15 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 const Category = ({ category, handleCategory }) => {
-  const [activeTitle, setActiveTitle] = useState("");
+  const [activeTitle, setActiveTitle] = useState("Free");
 
   return (
     <CategoryContainer>
       <ul>
-        {category?.map((categories) => {
+        {category?.map((categories, idx) => {
           return (
             <li
+              key={idx}
               onClick={(e) => {
                 setActiveTitle(e.target.textContent);
                 handleCategory(categories);

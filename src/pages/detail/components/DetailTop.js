@@ -1,36 +1,8 @@
-import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { DetailContainer } from "./DetailTopStyled";
 
-const DetailTop = () => {
+const DetailTop = (data) => {
   const navigate = useNavigate();
-  const [data, setData] = useState({
-    themeId: "",
-    imageUrl: "",
-    name: "",
-    creator: "",
-    hashtag: [],
-    isLiveTheme: "",
-  });
-
-  useEffect(() => {
-    // fetch(`https://api.plkey.app/theme/${themeId}`, {
-    fetch("/data/DetailTop.json", {
-      method: "GET",
-    })
-      .then((res) => res.json())
-      .then((result) => {
-        setData({
-          ...data,
-          imageUrl: result.data.imageUrl,
-          name: result.data.name,
-          creator: result.data.creator,
-          hashtag: result.data.hashtag,
-          isLiveTheme: result.data.isLiveTheme,
-        });
-      });
-  }, []);
-
   const backSpace = () => {
     navigate("/");
   };
@@ -47,21 +19,21 @@ const DetailTop = () => {
         </div>
         <div className="detailContents">
           <div className="imageContent">
-            <img src={data.imageUrl} className="imageUrl"></img>
+            <img src={data.data.imageUrl} className="imageUrl"></img>
           </div>
           <div className="nameContent">
-            <span>{data.name}</span>
+            <span>{data.data.name}</span>
             <img
               src={process.env.PUBLIC_URL + "/images/ic_all_share.png"}
             ></img>
           </div>
           <div className="creatorContent">
-            <span>{data.creator}</span>
+            <span>{data.data.creator}</span>
           </div>
           <div className="hashtagContainer">
-            {data.hashtag.map((data) => (
-              <div className="hashtagContent">
-                <span>{data}</span>
+            {data.data.hashtag.map((item) => (
+              <div className="hashtagContent" key={item}>
+                <span>{item}</span>
               </div>
             ))}
           </div>
@@ -72,7 +44,6 @@ const DetailTop = () => {
           </button>
         </div>
       </DetailContainer>
-      {/* {data.isLiveTheme ? <LiveTheme /> : ""} */}
     </>
   );
 };

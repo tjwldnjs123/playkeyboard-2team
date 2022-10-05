@@ -6,7 +6,7 @@ import InquiryBtn from "./components/bottomSection/InquiryBtn";
 import LiveTheme from "./components/LiveTheme";
 import { useParams } from "react-router-dom";
 
-const Detail = (props) => {
+const Detail = () => {
   const [data, setData] = useState();
   const param = useParams().id;
   useEffect(() => {
@@ -14,12 +14,11 @@ const Detail = (props) => {
       .then((res) => res.json())
       .then((data) => setData(data.data));
   }, []);
-
   return (
     <>
       {data && (
         <div>
-          <DetailTop />
+          <DetailTop data={data} />
           {data.figure && <LiveTheme figure={data.figure} />}
           <Expression />
           <InquiryBtn />

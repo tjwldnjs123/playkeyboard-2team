@@ -27,19 +27,22 @@ const Main = (props) => {
   }, [clickCategory]);
 
   return (
-    <MainContainer>
-      <Header />
-      {category && (
-        <Category handleCategory={handleCategory} category={category} />
-      )}
-      {cards && <Card cards={cards} />}
+    <>
+      <MainContainer>
+        <Header />
+        {category && (
+          <Category handleCategory={handleCategory} category={category} />
+        )}
+        {cards && <Card cards={cards} />}
+      </MainContainer>
       <Dock />
-    </MainContainer>
+    </>
   );
 };
 
 export default Main;
 
 const MainContainer = styled.div`
-  width: ${({ theme }) => theme.width.s20Ultra};
+  max-width: ${({ theme }) => theme.width.s20Ultra};
+  padding: 20px;
 `;

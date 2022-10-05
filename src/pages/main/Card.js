@@ -4,35 +4,45 @@ import HashTag from "./HashTag";
 
 const Card = ({ cards }) => {
   return (
-    <CardContainer>
-      {cards.map((card) => (
-        <div className="card-list">
-          <img className="card-img" src={card.imageUrl} alt="card-list-img" />
-          <div className="card-content">
-            <p className="card-name">{card.name}</p>
-            <div className="card-hashtag">
-              {card.hashtag.map((tag) => {
-                return <HashTag tag={tag} />;
-              })}
-            </div>
-            <div className="card-data-container">
-              <div className="card-data">
-                <img src="images/mainCard/패스 657.png" alt="download" />
-                <span>{card.downloads}</span>
+    <CardBox>
+      <CardContainer>
+        {cards.map((card) => (
+          <div className="card-list">
+            <img className="card-img" src={card.imageUrl} alt="card-list-img" />
+            <div className="card-content">
+              <p className="card-name">{card.name}</p>
+              <div className="card-hashtag">
+                {card.hashtag.map((tag) => {
+                  return <HashTag tag={tag} />;
+                })}
               </div>
-              <div className="card-price">
-                <img src="images/mainCard/Group 2022.png" alt="price" />
-                <span>{card.price}</span>
+              <div className="card-data-container">
+                <div className="card-data">
+                  <img src="images/mainCard/패스 657.png" alt="download" />
+                  <span>{card.downloads}</span>
+                </div>
+                <div className="card-price">
+                  <img src="images/mainCard/Group 2022.png" alt="price" />
+                  <span>{card.price}</span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      ))}
-    </CardContainer>
+        ))}
+      </CardContainer>
+    </CardBox>
   );
 };
 
 export default Card;
+
+const CardBox = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* margin: 0 auto; */
+`;
 
 const CardContainer = styled.div`
   display: flex;
@@ -41,13 +51,18 @@ const CardContainer = styled.div`
   /* border: 1px solid red; */
   height: 870px;
   overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 
   .card-list {
     width: 164px;
     height: 199px;
-    margin-left: 27px;
+    /* margin-left: 27px; */
     margin-bottom: 10px;
 
+    &:nth-child(2n-1) {
+      margin-right: 40px;
+    }
     .card-img {
       width: 164px;
       height: 130px;
@@ -112,5 +127,8 @@ const CardContainer = styled.div`
         }
       }
     }
+  }
+  &::-webkit-scrollbar {
+    display: none;
   }
 `;

@@ -15,12 +15,15 @@ function Header() {
 
 export default Header;
 
-const HeaderContainer = styled.div``;
+const HeaderContainer = styled.div`
+  width: 100%;
+`;
 
 const LogoContainer = styled.div`
-  margin: 31px 15px 0px 16px;
+  /* margin: 31px 15px 0px auto; */
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 `;
 
 const Logo = styled.img`
@@ -36,5 +39,5 @@ const Search = styled.img`
 const CategoryTitle = styled.div`
   width: 122px;
   height: 24px;
-  margin: 21px 0px 16px 16px;
+  /* margin: 21px 0px 16px auto; */
 `;

@@ -28,6 +28,10 @@ function Dock() {
 
 const DockContainer = styled.div`
   width: ${({ theme }) => theme.width.s20Ultra};
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
   box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.3);
 `;
 

@@ -32,22 +32,27 @@ const CategoryContainer = styled.div`
   padding: 16px;
 
   ul {
+    width: 100%;
     display: flex;
     align-items: center;
     height: 48px;
-    /* padding-left: 16px; */
     font-size: 14px;
     overflow-x: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
 
     li {
-      display: flex;
+      margin-right: 16px;
       height: 35px;
       padding-right: 20px;
       color: ${({ theme }) => theme.colors.grey};
 
       span {
+        width: 100%;
+        height: 35px;
+        display: inline-block;
+        margin-right: 20px;
+        text-align: center;
         &.active {
           color: ${({ theme }) => theme.colors.hotpink};
           border-bottom: 3px solid ${({ theme }) => theme.colors.hotpink};

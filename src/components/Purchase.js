@@ -17,13 +17,18 @@ export default Purchase;
 
 const PurchaseContainer = styled.div`
   height: 64px;
-  width: 375px;
+  width: 100%;
   padding: 9px 10px;
-  margin-top: 10px;
+  display: flex;
+  justify-content: center;
   box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.3);
 `;
 
 const PurchaseButton = styled.button`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
   background-color: ${({ theme }) => theme.colors.hotpink};
   width: 354px;

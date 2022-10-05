@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import Counter from "./Counter";
 
 const Expression = () => {
-  const [count, setCount] = useState(false);
+  const [click, setClick] = useState(false);
 
   const ExpressionElem = [
     {
@@ -32,14 +33,13 @@ const Expression = () => {
       {ExpressionElem.map((result) => {
         return (
           <ExpressionWrapper
-            onClick={() => {
-              setCount((current) => !current);
-            }}
+            onClick={() => setClick((current) => !current)}
             key={result.id}
           >
-            <img alt="표정" src={result.image} />
-            <div>{result.text}</div>
-            <div> {count ? 1 : 0}</div>
+            <div>
+              <img alt="표정" src={result.image} />
+              <Counter text={result.text} />
+            </div>
           </ExpressionWrapper>
         );
       })}
@@ -50,27 +50,31 @@ export default Expression;
 
 const ExpressionContainer = styled.div`
   display: flex;
+  justify-content: center;
+  height: 5rem;
+  width: 100%;
 `;
 
 const ExpressionWrapper = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
   flex-direction: column;
-  width: 56px;
-  height: 64px;
-  font-size: 12px;
-  line-height: 18px;
-  margin-left: 20px;
+  width: 3.5rem;
+  height: 4rem;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
   color: ${({ theme }) => theme.colors.dockGrey};
+
   img {
-    width: 30px;
-    height: 24px;
+    width: 1.875rem;
+    height: 1.5rem;
   }
   div {
     font-weight: 400;
-    width: 56px;
-    height: 18px;
+    width: 3.5rem;
+    height: 1.125rem;
     text-align: center;
   }
 `;

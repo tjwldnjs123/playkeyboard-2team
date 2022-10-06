@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import styled from "styled-components";
+import React, { useState } from 'react';
+import styled from 'styled-components';
 
 const Category = ({ category, handleCategory }) => {
-  const [activeTitle, setActiveTitle] = useState("Free");
+  const [activeTitle, setActiveTitle] = useState('Free');
 
   return (
     <CategoryContainer>
@@ -16,7 +16,7 @@ const Category = ({ category, handleCategory }) => {
                 handleCategory(categories);
               }}
             >
-              <span className={activeTitle === categories ? "active" : ""}>
+              <span className={activeTitle === categories ? 'active' : ''}>
                 {categories}
               </span>
             </li>
@@ -51,7 +51,6 @@ const CategoryContainer = styled.div`
         height: 35px;
         display: inline-block;
         text-align: center;
-        white-space: nowrap;
 
         &:last-child {
           margin-right: 60px;

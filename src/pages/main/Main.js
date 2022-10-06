@@ -27,7 +27,7 @@ const Main = (props) => {
   }, [clickCategory]);
 
   return (
-    <>
+    <MainResponsive>
       <MainContainer>
         <Header />
         {category && (
@@ -36,13 +36,17 @@ const Main = (props) => {
         {cards && <Card cards={cards} />}
       </MainContainer>
       <Dock />
-    </>
+    </MainResponsive>
   );
 };
 
 export default Main;
 
-const MainContainer = styled.div`
+const MainResponsive = styled.div`
+  height: ${({ theme }) => theme.height.common};
   max-width: ${({ theme }) => theme.width.s20Ultra};
-  padding: 20px;
+`;
+
+const MainContainer = styled.div`
+  padding: 20px 20px 0 20px;
 `;

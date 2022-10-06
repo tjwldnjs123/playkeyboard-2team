@@ -40,6 +40,10 @@ const DockWrapper = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @media screen and (max-width: ${({ theme }) => theme.width.iPhoneSe}) {
+    width: 90%;
+  }
 `;
 
 const IconWrapper = styled.div`

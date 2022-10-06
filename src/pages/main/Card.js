@@ -1,7 +1,7 @@
-import React from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
-import styled from 'styled-components';
-import HashTag from './HashTag';
+import React from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import styled from "styled-components";
+import HashTag from "./HashTag";
 
 const Card = ({ cards }) => {
   const navigate = useNavigate();
@@ -12,26 +12,26 @@ const Card = ({ cards }) => {
         {cards.map((card) => (
           <div
             key={card.themeId}
-            className='card-list'
+            className="card-list"
             onClick={() => {
               navigate(`/detail/${card.themeId}`);
             }}
           >
-            <img className='card-img' src={card.imageUrl} alt='card-list-img' />
-            <div className='card-content'>
-              <p className='card-name'>{card.name}</p>
-              <div className='card-hashtag'>
+            <img className="card-img" src={card.imageUrl} alt="card-list-img" />
+            <div className="card-content">
+              <p className="card-name">{card.name}</p>
+              <div className="card-hashtag">
                 {card.hashtag.map((tag, idx) => {
                   return <HashTag key={idx} tag={tag} />;
                 })}
               </div>
-              <div className='card-data-container'>
-                <div className='card-data'>
-                  <img src='images/mainCard/패스 657.png' alt='download' />
+              <div className="card-data-container">
+                <div className="card-data">
+                  <img src="images/mainCard/패스 657.png" alt="download" />
                   <span>{card.downloads}</span>
                 </div>
-                <div className='card-price'>
-                  <img src='images/mainCard/Group 2022.png' alt='price' />
+                <div className="card-price">
+                  <img src="images/mainCard/Group 2022.png" alt="price" />
                   <span>{card.price}</span>
                 </div>
               </div>
@@ -56,7 +56,7 @@ const CardContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  height: 870px;
+  height: 850px;
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -131,6 +131,14 @@ const CardContainer = styled.div`
             color: ${({ theme }) => theme.colors.skyblue};
           }
         }
+      }
+    }
+
+    @media screen and (max-width: ${({ theme }) => theme.width.iPhoneSe}) {
+      width: 150px;
+
+      &:nth-child(2n-1) {
+        margin-right: 30px;
       }
     }
   }

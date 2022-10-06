@@ -41,7 +41,7 @@ const Main = styled.div`
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
+    width: calc(100% - 40px);
     margin-bottom: 2.688rem;
 
     li {

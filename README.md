@@ -1,4 +1,5 @@
 # Playkeyboard 2team ❤️‍🔥 
+### __[배포주소](https://2021bong.github.io/playkeyboard-2team/)__ 
 
 ## JUSTCODE 6기 기업협업 1주차 1번째 과제-플레이키보드- 2팀
 
@@ -22,7 +23,8 @@
 
 ### 3-1. 적용 기술 
 
-JavaScript, React.js, react-router-dom, styled-components, hangul-js
+JavaScript, React.js, react-router-dom, styled-components
+라이브러리: hangul-js(한글조합 라이브러리), gh-pages (배포라이브러리)
 
 ### 3-2. 구현 기능
 

@@ -41,8 +41,15 @@ const DockWrapper = styled.div`
   justify-content: space-around;
   align-items: center;
 
+  @media screen and (max-width: ${({ theme }) => theme.width.iPhonePro}) {
+    width: 95%;
+  }
   @media screen and (max-width: ${({ theme }) => theme.width.iPhoneSe}) {
     width: 90%;
+  }
+
+  @media screen and (max-width: ${({ theme }) => theme.width.s80}) {
+    width: 87%;
   }
 `;
 

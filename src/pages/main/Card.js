@@ -134,11 +134,27 @@ const CardContainer = styled.div`
       }
     }
 
+    @media screen and (max-width: ${({ theme }) => theme.width.iPhonePro}) {
+      width: 150px;
+
+      &:nth-child(2n-1) {
+        margin-right: 50px;
+      }
+    }
+
     @media screen and (max-width: ${({ theme }) => theme.width.iPhoneSe}) {
       width: 150px;
 
       &:nth-child(2n-1) {
-        margin-right: 30px;
+        margin-right: 35px;
+      }
+    }
+
+    @media screen and (max-width: ${({ theme }) => theme.width.s80}) {
+      width: 150px;
+
+      &:nth-child(2n-1) {
+        margin-right: 20px;
       }
     }
   }

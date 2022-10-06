@@ -11,7 +11,9 @@ export default {
 
   width: {
     s20Ultra: "412px",
+    iPhonePro: "393px",
     iPhoneSe: "375px",
+    s80: "360px",
   },
 
   height: {

@@ -7,22 +7,22 @@ function Dock() {
       <DockWrapper>
         <IconWrapper>
           <Icon
-            src={process.env.PUBLIC_URL + "images/ic_nav_store_disabled.png"}
+            src={process.env.PUBLIC_URL + "/images/ic_nav_store_disabled.png"}
           />
           <Title>스토어</Title>
         </IconWrapper>
         <IconWrapper>
-          <Icon src={process.env.PUBLIC_URL + "images/ic_logo_charging.png"} />
+          <Icon src={process.env.PUBLIC_URL + "/images/ic_logo_charging.png"} />
           <Title>충전소</Title>
         </IconWrapper>
         <IconWrapper>
-          <Icon src={process.env.PUBLIC_URL + "images/ic_nav_mytheme.png"} />
+          <Icon src={process.env.PUBLIC_URL + "/images/ic_nav_mytheme.png"} />
           <ThemeTitle>MY테마</ThemeTitle>
         </IconWrapper>
         <IconWrapper>
           <Icon
             src={
-              process.env.PUBLIC_URL + "images/icon_material-settings_1_.png"
+              process.env.PUBLIC_URL + "/images/icon_material-settings_1_.png"
             }
           />
           <Title>설정</Title>

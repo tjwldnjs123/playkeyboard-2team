@@ -43,17 +43,18 @@ const CategoryContainer = styled.div`
     scrollbar-width: none;
 
     li {
-      margin-right: 16px;
       height: 35px;
-      padding-right: 20px;
       color: ${({ theme }) => theme.colors.grey};
 
       span {
         width: 100%;
         height: 35px;
         display: inline-block;
-        margin-right: 20px;
         text-align: center;
+
+        &:last-child {
+          margin-right: 60px;
+        }
         &.active {
           color: ${({ theme }) => theme.colors.hotpink};
           border-bottom: 3px solid ${({ theme }) => theme.colors.hotpink};

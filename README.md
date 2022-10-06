@@ -27,7 +27,7 @@ JavaScript, React.js, react-router-dom, styled-components, hangul-js(한글조�
 
 ### 3-2. 구현 기능
 - ✅ 첫번째 페이지
-###### ![image](https://user-images.githubusercontent.com/103613612/194266009-61641663-1110-4027-9411-11de36da513c.png)
+###### ![image](https://user-images.githubusercontent.com/103613612/194277050-07a6b307-cd2a-4fbd-9cef-6c9f1bb5b021.png)
 
   - 서지원
     - 카테고리 

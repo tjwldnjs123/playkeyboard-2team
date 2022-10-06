@@ -74,4 +74,6 @@ JavaScript, React.js, react-router-dom, styled-components
     - 모달 구현
     - 키보드 레이아웃
     - 한글 조합을 위한 라이브러리 적용
+    ##### !! 세번째 페이지는 두번쨰 페이지의 키보드 이미지를 클릭시 모달 창으로 화면에 적용됩니다 !!
+ 
 

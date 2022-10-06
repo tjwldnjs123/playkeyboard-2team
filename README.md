@@ -1,24 +1,32 @@
-# playkeyboard-2team
+# Playkeyboard 2team ❤️‍🔥 
 
-## justcode 6기 기업협업 1주차 1번째 과제 2팀
+## JUSTCODE 6기 기업협업 1주차 1번째 과제-플레이키보드- 2팀
 
-## 1. 개발 기간
+## 1. 개발 기간 🗓
 
 - __개발 기간__  : 2022.10.04 ~ 2022.10.06(3일)
 
-## 2. 협업 방식
+## 2. 팀원 및 협업 방식 🤹
 
+**팀원**
+   - 김유현
+   - 박기호
+   - 봉원희
+   - 이은지
+   - 서지원
+
+**협업 방식**
 - __[팀 노션](https://www.notion.so/wecode/Team7-JGUD-895618b19f4941dabc8961ff0e1b16cf)__
 
-## 3. 적용 기술 및 구현 기능
+## 3. 적용 기술 및 구현 기능 🛠
 
 ### 3-1. 적용 기술 
 
-JavaScript, React.js, styled component, react-router-dom  (사용하신 라이브러리 있으면 추가해주세요 !)
+JavaScript, React.js, react-router-dom, styled-components, hangul-js
 
 ### 3-2. 구현 기능
 
-- 첫번째 페이지
+- ✅ 첫번째 페이지
   - 서지원
     - 카테고리 
       - fetch 적용해 데이터를 받아 카테고리 구현
@@ -31,7 +39,7 @@ JavaScript, React.js, styled component, react-router-dom  (사용하신 라이�
       - 카드 클릭 시 navigate 적용하여 detail페이지로 이동
       - 반응형 적용
  
-- 두번째 페이지
+- ✅ 두번째 페이지
   - 김유현
     - 사용자 피드백
       - 이모티콘 영역 클릭시 숫자 및 텍스트 색상변화 적용
@@ -39,5 +47,17 @@ JavaScript, React.js, styled component, react-router-dom  (사용하신 라이�
     - 버튼 
       - UI 구현 및 컴포넌트화
       
-- 세번째 페이지
+  - 봉원희
+    - 라이브 테마 아이템
+      - 라이브 테마 아이템 레이아웃
+      - 라이브 테마가 있을 때만 보여주도록 조건부 렌더링
+    - 마무리 정리
+      - Desktop에서 늘어나지 않도록 최대 너비 지정 및 정렬
+      - 자잘한 CSS 수정
+      
+- ✅ 세번째 페이지
+  - 봉원희
+    - 모달 구현
+    - 키보드 레이아웃
+    - 한글 조합을 위한 라이브러리 적용
 

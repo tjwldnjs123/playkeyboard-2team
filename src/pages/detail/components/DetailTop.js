@@ -1,10 +1,10 @@
-import { useNavigate } from "react-router-dom";
-import { DetailContainer } from "./DetailTopStyled";
+import { useNavigate } from 'react-router-dom';
+import { DetailContainer } from './DetailTopStyled';
 
 const DetailTop = (data) => {
   const navigate = useNavigate();
   const backSpace = () => {
-    navigate("/");
+    navigate('/');
   };
 
   return (
@@ -12,27 +12,27 @@ const DetailTop = (data) => {
       <DetailContainer>
         <div>
           <img
-            src={process.env.PUBLIC_URL + "/images/ic_all_back.png"}
-            className="backIcon"
+            src={process.env.PUBLIC_URL + '/images/ic_all_back.png'}
+            className='backIcon'
             onClick={backSpace}
           ></img>
         </div>
-        <div className="detailContents">
-          <div className="imageContent">
-            <img src={data.data.imageUrl} className="imageUrl"></img>
+        <div className='detailContents'>
+          <div className='imageContent' onClick={() => data.setModal(true)}>
+            <img src={data.data.imageUrl} className='imageUrl'></img>
           </div>
-          <div className="nameContent">
+          <div className='nameContent'>
             <span>{data.data.name}</span>
             <img
-              src={process.env.PUBLIC_URL + "/images/ic_all_share.png"}
+              src={process.env.PUBLIC_URL + '/images/ic_all_share.png'}
             ></img>
           </div>
-          <div className="creatorContent">
+          <div className='creatorContent'>
             <span>{data.data.creator}</span>
           </div>
-          <div className="hashtagContainer">
+          <div className='hashtagContainer'>
             {data.data.hashtag.map((item) => (
-              <div className="hashtagContent" key={item}>
+              <div className='hashtagContent' key={item}>
                 <span>{item}</span>
               </div>
             ))}

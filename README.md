@@ -8,7 +8,7 @@
 
 ## 2. 협업 방식
 
-- __[팀 노션](https://www.notion.so/wecode/Team7-JGUD-895618b19f4941dabc8961ff0e1b16cf)__
+- __[팀 노션](https://www.notion.so/wecode/2-7d05b3fe1473486f9e85f741480076cc)__
 
 ## 3. 적용 기술 및 구현 기능
 

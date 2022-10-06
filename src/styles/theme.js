@@ -11,5 +11,10 @@ export default {
 
   width: {
     s20Ultra: "412px",
+    iPhoneSe: "375px",
+  },
+
+  height: {
+    common: "100vh",
   },
 };

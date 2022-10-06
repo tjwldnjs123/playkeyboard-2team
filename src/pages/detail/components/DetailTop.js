@@ -12,7 +12,7 @@ const DetailTop = (data) => {
       <DetailContainer>
         <div>
           <img
-            src={process.env.PUBLIC_URL + '/images/ic_all_back.png'}
+            src={process.env.PUBLIC_URL + 'images/ic_all_back.png'}
             className='backIcon'
             onClick={backSpace}
           ></img>
@@ -23,9 +23,7 @@ const DetailTop = (data) => {
           </div>
           <div className='nameContent'>
             <span>{data.data.name}</span>
-            <img
-              src={process.env.PUBLIC_URL + '/images/ic_all_share.png'}
-            ></img>
+            <img src={process.env.PUBLIC_URL + 'images/ic_all_share.png'}></img>
           </div>
           <div className='creatorContent'>
             <span>{data.data.creator}</span>

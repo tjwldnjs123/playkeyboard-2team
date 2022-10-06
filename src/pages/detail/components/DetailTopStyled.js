@@ -6,6 +6,8 @@ export const DetailContainer = styled.div`
   margin: 1.216rem 1.188rem;
   background-color: white;
   text-align: center;
+  /* max-width: ; */
+  /* max-height: 100vh; */
 
   .backIcon {
     width: 1.125rem;
@@ -45,8 +47,6 @@ export const DetailContainer = styled.div`
     }
 
     .creatorContent {
-      width: 1.625rem;
-      height: 1.25rem;
       margin-top: 0.125rem;
 
       span {
@@ -56,20 +56,21 @@ export const DetailContainer = styled.div`
         letter-spacing: 0em;
         color: ${({ theme }) => theme.colors.dockGrey};
         opacity: 1;
+        display: flex;
       }
     }
 
     .hashtagContainer {
-      margin-top: 1.5rem;
+      margin-top: 1.1rem;
 
       .hashtagContent {
-        width: 4.125rem;
-        height: 1.75rem;
-        margin: 0.188rem 0.125rem;
+        margin-right: 0.4rem;
+        margin-top: 0.4rem;
+        padding: 0.38rem;
         text-align: center;
         display: inline-block;
         background: ${({ theme }) => theme.colors.hashGrey};
-        border-radius: 1.125rem;
+        border-radius: 1rem;
 
         span {
           font-family: "Noto Sans KR";

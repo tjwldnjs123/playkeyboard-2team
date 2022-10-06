@@ -6,7 +6,12 @@ const PurchaseBtn = () => {
     <PurchaseContainer>
       <PurchaseButton>
         <div>
-          구매 <img alt='다이아' src='images/diamond.png' />7
+          구매{' '}
+          <img
+            alt='다이아'
+            src={process.env.PUBLIC_URL + '/images/diamond.png'}
+          />
+          7
         </div>
         <div>광고제거˙무제한 사용</div>
       </PurchaseButton>

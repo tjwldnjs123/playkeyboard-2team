@@ -9,22 +9,22 @@ const Expression = () => {
     {
       id: 1,
       text: '맘에들어요',
-      image: 'images/smile.png',
+      image: '/images/smile.png',
     },
     {
       id: 2,
       text: '심쿵했어요',
-      image: 'images/love.png',
+      image: '/images/love.png',
     },
     {
       id: 3,
       text: '응원해요',
-      image: 'images/wink.png',
+      image: '/images/wink.png',
     },
     {
       id: 4,
       text: '갖고싶어요',
-      image: 'images/laugh.png',
+      image: '/images/laugh.png',
     },
   ];
 
@@ -37,7 +37,7 @@ const Expression = () => {
             key={result.id}
           >
             <div>
-              <img alt='표정' src={result.image} />
+              <img alt='표정' src={process.env.PUBLIC_URL + result.image} />
               <Counter text={result.text} />
             </div>
           </ExpressionWrapper>

@@ -20,11 +20,7 @@ function Dock() {
           <ThemeTitle>MY테마</ThemeTitle>
         </IconWrapper>
         <IconWrapper>
-          <Icon
-            src={
-              process.env.PUBLIC_URL + "/images/icon_material-settings_1_.png"
-            }
-          />
+          <Icon src={process.env.PUBLIC_URL + "/images/cog.png"} />
           <Title>설정</Title>
         </IconWrapper>
       </DockWrapper>

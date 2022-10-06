@@ -39,7 +39,7 @@ JavaScript, React.js, react-router-dom, styled-components, hangul-js
       - 카드 클릭 시 navigate 적용하여 detail페이지로 이동
       - 반응형 적용
       
- - 박기호
+  - 박기호
     - 헤더 
       - UI 구현
     - 독

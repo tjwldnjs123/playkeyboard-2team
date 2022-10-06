@@ -23,8 +23,7 @@
 
 ### 3-1. 적용 기술 
 
-JavaScript, React.js, react-router-dom, styled-components
-라이브러리: hangul-js(한글조합 라이브러리), gh-pages (배포라이브러리)
+JavaScript, React.js, react-router-dom, styled-components, hangul-js(한글조합 라이브러리), gh-pages (배포라이브러리)
 
 ### 3-2. 구현 기능
 - ✅ 첫번째 페이지

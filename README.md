@@ -27,8 +27,9 @@ JavaScript, React.js, react-router-dom, styled-components
 라이브러리: hangul-js(한글조합 라이브러리), gh-pages (배포라이브러리)
 
 ### 3-2. 구현 기능
-
 - ✅ 첫번째 페이지
+###### ![image](https://user-images.githubusercontent.com/103613612/194266009-61641663-1110-4027-9411-11de36da513c.png)
+
   - 서지원
     - 카테고리 
       - fetch 적용해 데이터를 받아 카테고리 구현
@@ -48,6 +49,7 @@ JavaScript, React.js, react-router-dom, styled-components
       - UI 구현
       
 - ✅ 두번째 페이지
+###### ![image](https://user-images.githubusercontent.com/103613612/194266472-2650377a-981d-4f69-805f-fdac5dd972a4.png)
   - 김유현
     - 사용자 피드백
       - 이모티콘 영역 클릭시 숫자 및 텍스트 색상변화 적용
@@ -70,6 +72,7 @@ JavaScript, React.js, react-router-dom, styled-components
       - map을 이용해 클릭된 카드의 해시태그를 전부 보여줌
       
 - ✅ 세번째 페이지
+###### ![image](https://user-images.githubusercontent.com/103613612/194266601-1ea08d76-acb9-4c37-b67a-938b94b8e678.png)
   - 봉원희
     - 모달 구현
     - 키보드 레이아웃

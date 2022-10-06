@@ -54,6 +54,12 @@ JavaScript, React.js, react-router-dom, styled-components, hangul-js
     - 마무리 정리
       - Desktop에서 늘어나지 않도록 최대 너비 지정 및 정렬
       - 자잘한 CSS 수정
+   
+  - 이은지
+    - 테마 정보
+      - detail.js 에서 받은 데이터로 UI 구현
+      - 최상단의 backspace 아이콘 클릭 시 main 페이지로 이동
+      - map을 이용해 클릭된 카드의 해시태그를 전부 보여줌
       
 - ✅ 세번째 페이지
   - 봉원희

@@ -8,7 +8,7 @@ import Modal from './pages/detail/components/Modal';
 const Router = () => {
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
+      <BrowserRouter basename='/playkeyboard-2team'>
         <Routes>
           <Route path='/' element={<Main />} />
           <Route path='/detail/:id' element={<Detail />} />

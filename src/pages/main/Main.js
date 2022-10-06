@@ -45,6 +45,7 @@ export default Main;
 const MainResponsive = styled.div`
   height: ${({ theme }) => theme.height.common};
   max-width: ${({ theme }) => theme.width.s20Ultra};
+  margin: 0 auto;
 `;
 
 const MainContainer = styled.div`

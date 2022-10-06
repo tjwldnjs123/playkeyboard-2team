@@ -67,7 +67,7 @@ const CardContainer = styled.div`
     margin-bottom: 10px;
 
     &:nth-child(2n-1) {
-      margin-right: 40px;
+      margin-right: 42px;
     }
     .card-img {
       width: 164px;

@@ -3,11 +3,10 @@ import styled from "styled-components";
 export const DetailContainer = styled.div`
   /* @media only screen and (max-width: ${({ theme }) =>
     theme.width.s20Ultra}) { */
+
   margin: 1.216rem 1.188rem;
   background-color: white;
   text-align: center;
-  /* max-width: ; */
-  /* max-height: 100vh; */
 
   .backIcon {
     width: 1.125rem;

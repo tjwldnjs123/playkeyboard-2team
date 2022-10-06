@@ -51,6 +51,7 @@ const CategoryContainer = styled.div`
         height: 35px;
         display: inline-block;
         text-align: center;
+        white-space: nowrap;
 
         &:last-child {
           margin-right: 60px;

@@ -27,11 +27,21 @@ const Card = ({ cards }) => {
               </div>
               <div className="card-data-container">
                 <div className="card-data">
-                  <img src="images/mainCard/패스 657.png" alt="download" />
+                  <img
+                    src={
+                      process.env.PUBLIC_URL + "/images/mainCard/패스 657.png"
+                    }
+                    alt="download"
+                  />
                   <span>{card.downloads}</span>
                 </div>
                 <div className="card-price">
-                  <img src="images/mainCard/Group 2022.png" alt="price" />
+                  <img
+                    src={
+                      process.env.PUBLIC_URL + "/images/mainCard/Group 2022.png"
+                    }
+                    alt="price"
+                  />
                   <span>{card.price}</span>
                 </div>
               </div>

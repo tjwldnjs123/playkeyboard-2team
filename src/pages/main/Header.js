@@ -5,8 +5,12 @@ function Header() {
   return (
     <HeaderContainer>
       <LogoContainer>
-        <Logo src="images/logo_horizpntal_136x18.png" />
-        <Search src="images/ic_nav_store_search.png" />
+        <Logo
+          src={process.env.PUBLIC_URL + "/images/logo_horizpntal_136x18.png"}
+        />
+        <Search
+          src={process.env.PUBLIC_URL + "/images/ic_nav_store_search.png"}
+        />
       </LogoContainer>
       <CategoryTitle>취향대로 골라보기</CategoryTitle>
     </HeaderContainer>

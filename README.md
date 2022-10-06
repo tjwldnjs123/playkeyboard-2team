@@ -38,7 +38,13 @@ JavaScript, React.js, react-router-dom, styled-components, hangul-js
       - 카테고리 클릭 시 해당 카드 나오게 query이용하여 구현 
       - 카드 클릭 시 navigate 적용하여 detail페이지로 이동
       - 반응형 적용
- 
+      
+ - 박기호
+    - 헤더 
+      - UI 구현
+    - 독
+      - UI 구현
+      
 - ✅ 두번째 페이지
   - 김유현
     - 사용자 피드백

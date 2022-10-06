@@ -8,13 +8,13 @@
 
 ## 2. 협업 방식
 
-- __[팀 노션](https://www.notion.so/wecode/2-7d05b3fe1473486f9e85f741480076cc)__
+- __[팀 노션](https://www.notion.so/wecode/Team7-JGUD-895618b19f4941dabc8961ff0e1b16cf)__
 
 ## 3. 적용 기술 및 구현 기능
 
 ### 3-1. 적용 기술 
 
-JavaScript, React.js, styled component, react-router-dom
+JavaScript, React.js, styled component, react-router-dom  (사용하신 라이브러리 있으면 추가해주세요 !)
 
 ### 3-2. 구현 기능
 
@@ -31,4 +31,13 @@ JavaScript, React.js, styled component, react-router-dom
       - 카드 클릭 시 navigate 적용하여 detail페이지로 이동
       - 반응형 적용
  
+- 두번째 페이지
+  - 김유현
+    - 사용자 피드백
+      - 이모티콘 영역 클릭시 숫자 및 텍스트 색상변화 적용
+      - 재 클릭 시 숫자 및 텍스트 원래 색상 변화 적용
+    - 버튼 
+      - UI 구현 및 컴포넌트화
+      
+- 세번째 페이지
 
